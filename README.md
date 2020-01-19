@@ -28,26 +28,26 @@ We can reimplement the Navbar Toggler functionalities in our Navbar.js component
 
 ## Setup
 
-Create a React app
+Create a React app  
 `npx create-react-app react-navbar-toggler`
 
-Move into the project directory
+Move into the project directory  
 `cd react-navbar-toggler`
 
-Install dependencies
+Install dependencies  
 `yarn add node-sass bootstrap react-router-dom`
 
-Create your project structure
+Create your project structure 
 
 In your `Navbar.js` class component:
 
-- Create a state in the constructor
+- Create a state in the constructor 
 
 ```jsx
     this.state = { collapsed: true };
 ```
 
-- Create a function to update the state
+- Create a function to update the state 
 
 ```jsx
     toggleNavbar = () => {
