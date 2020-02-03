@@ -7,9 +7,8 @@ export default function Navbar() {
 
     const [collapsed, setCollapsed] = useState(true)
     const status = collapsed ? 'collapsed' : 'show';
+    //UserContext consumer using Hook -> useContext
     const { user } = useContext(UserContext);
-
-    console.log(user)
 
     const toggleNavbar = () => {
         setCollapsed(
@@ -31,7 +30,7 @@ export default function Navbar() {
                             <Link
                                 to={'/'} className="nav-link">
                                 Home
-                                    </Link>
+                            </Link>
                         </li>
                         <li>
                             <Link
